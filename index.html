@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>what is your name? </h1>
+<input id="userInput"> <br> <br>
+<button onclick="myfuntion()">sumbit</button>
+<h1 id="message" > </h1>
+<h1>what is your age?</h1>
+<input id="age" >
+<button onclick="age()">sumbit</button>
+<h1 id="age"></h1>
+<button onclick="information()" >sumbit all information</button>
+<h1 id="information"></h1>
+<style>
+
+body{background-color: beige; text-align: center; }
+
+
+</style>
+
+<script>
+function myfuntion(){
+
+
+        let  userInput = document.querySelector("#userInput");
+
+        let message = document.querySelector("#message");
+
+        message.innerHTML = "welcome to my website " + userInput.value;
+
+    
+    
+
+
+
+}
+
+function age () {
+
+let age=document.querySelector("#age")
+
+age.innerHTML="you are " + age + "years old"
+
+
+}
+
+function information(){
+
+let information = document.querySelector("#information") ;
+
+information.innerHTML= "thank's for your time " + userInput.value
+
+
+}
+
+</script>
+</body>
+</html>
